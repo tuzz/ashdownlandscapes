@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ashdownlandscapes_development
+
+test:
+  <<: *default
+  database: ashdownlandscapes_test
+
+production:
+  <<: *default
+  database: ashdownlandscapes_production
