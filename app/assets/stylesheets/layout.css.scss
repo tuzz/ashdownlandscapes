@@ -1,0 +1,54 @@
+body {
+  font-family: HelveticaRegular, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.content {
+  width: 800px;
+  height: 560px;
+  margin: auto;
+
+  background-image: url(image_path("background.jpg"));
+  background-repeat: no-repeat;
+  background-size: 580px 527px;
+  background-position: center 10px;
+}
+
+h1, h2, h3 {
+  font-family: HeitiTC, STHeiti, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 26px;
+  display: inline-block;
+  padding: 0 78px;
+}
+
+nav {
+  text-align: center;
+  margin: 25px 0;
+
+  a {
+    text-decoration: none;
+    color: #bed5c1;
+
+    &.selected {
+       color: black;
+    }
+  }
+}
+
+section {
+  padding: 0 60px;
+}
+
+p {
+  line-height: 22px;
+  margin: 20px 0;
+}

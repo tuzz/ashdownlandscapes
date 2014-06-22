@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ashdownlandscapes</title>
+  <title>Ashdown Landscapes</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=800">
 </head>
-<body>
+<body class="<%= action_name %>">
+<div class="content">
 
-<%= yield %>
+<header>
+  <h1>Ashdown Landscapes</h1>
+</header>
 
+<nav>
+  <%= nav_item(about_us_path) %>
+  <%= nav_item(photos_path) %>
+  <%= nav_item(contact_path) %>
+</nav>
+
+<section>
+  <%= yield %>
+</section>
+
+</div>
 </body>
 </html>
