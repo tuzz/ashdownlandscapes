@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'HelveticaRegular';
-    src: font-url('/assets/helvetica.eot');
-    src: font-url('/assets/helvetica.eot') format('embedded-opentype'),
-         font-url('/assets/helvetica.woff') format('woff'),
-         font-url('/assets/helvetica.ttf') format('truetype'),
-         font-url('/assets/helvetica.svg#HelveticaRegular') format('svg');
-}
