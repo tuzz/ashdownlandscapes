@@ -6,3 +6,12 @@
          font-url('helvetica.ttf') format('truetype'),
          font-url('helvetica.svg#HelveticaRegular') format('svg');
 }
+
+@font-face {
+    font-family: 'HeitiTC';
+    src: font-url('heiti.eot');
+    src: font-url('heiti.eot') format('embedded-opentype'),
+         font-url('heiti.woff') format('woff'),
+         font-url('heiti.ttf') format('truetype'),
+         font-url('heiti.svg#HeitiTC') format('svg');
+}
