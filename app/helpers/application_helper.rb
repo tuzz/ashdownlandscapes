@@ -2,7 +2,7 @@ module ApplicationHelper
 
   def nav_item(path)
     nav_action = path.gsub("/", "")
-    title = nav_action.titleize
+    title = nav_action.capitalize.gsub("_", " ")
     klass = "selected" if action_name == nav_action
 
     content_tag :h2 do
