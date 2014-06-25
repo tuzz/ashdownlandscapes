@@ -48,6 +48,10 @@ section {
   padding: 0 60px;
 }
 
+.contact section {
+  padding: 0 50px;
+}
+
 p {
   line-height: 22px;
   margin: 20px 0;
@@ -58,5 +62,20 @@ nav.pages {
 
   a {
     margin: 0 10px;
+  }
+}
+
+.email {
+  color: black;
+}
+
+.contact {
+  .labels {
+    width: 100px;
+    display: inline-block;
+  }
+
+  .details {
+    display: inline-block;
   }
 }
