@@ -1,51 +1,22 @@
-<div class="thumnail-row">
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "1.jpg" %>
+<% @photos.each do |chunk| %>
+  <div class="thumnail-row">
+    <% chunk.each do |i| %>
+      <div class="thumnail">
+        <div class="border">
+          <%= link_to image_tag("thumnails/#{i}.jpg"), image_path("highres/#{i}.jpg") %>
+        </div>
+      </div>
+    <% end %>
   </div>
-</div>
+<% end %>
 
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "2.jpg" %>
-  </div>
-</div>
+<% if @photos.size == 1 %>
+  <div class="thumnail-row"></div>
+<% end %>
 
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "3.jpg" %>
-  </div>
-</div>
-
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "4.jpg" %>
-  </div>
-</div>
-</div>
-
-<div class="thumnail-row">
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "5.jpg" %>
-  </div>
-</div>
-
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "6.jpg" %>
-  </div>
-</div>
-
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "7.jpg" %>
-  </div>
-</div>
-
-<div class="thumnail">
-  <div class="border">
-    <%= image_tag "8.jpg" %>
-  </div>
-</div>
-</div>
+<nav class="pages">
+  <% 1.upto(@total_pages) do |page| %>
+    <% klass = "selected" if page == @current_page %>
+    <%= link_to page, url_for(page: page), class: klass %>
+  <% end %>
+</nav>
