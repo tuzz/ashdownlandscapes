@@ -1,0 +1,33 @@
+$thumnail-size: 147px;
+$thumnail-spacing: 30px;
+
+.thumnail-row {
+  height: $thumnail-size;
+  margin-left: 680 - (4 * $thumnail-size) - (3 * $thumnail-spacing);
+  margin-bottom: $thumnail-spacing;
+
+  .thumnail {
+    float: left;
+    margin-left: $thumnail-spacing;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .border {
+      display: table-cell;
+      vertical-align: middle;
+      width: $thumnail-size;
+      height: $thumnail-size;
+
+      img {
+        max-width: $thumnail-size;
+        max-height: $thumnail-size;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 20px #3F5642;
+        border-radius: 2px;
+      }
+    }
+  }
+}
