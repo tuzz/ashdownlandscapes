@@ -1,6 +1,7 @@
 body {
   font-family: HelveticaRegular, Helvetica, Arial, sans-serif;
   font-size: 18px;
+  background-color: #F1FFF4;
 }
 
 .content {
@@ -8,7 +9,7 @@ body {
   height: 560px;
   margin: auto;
 
-  background-image: url(image_path("background.jpg"));
+  background-image: url(image_path("background.png"));
   background-repeat: no-repeat;
   background-size: 580px 527px;
   background-position: center 10px;
