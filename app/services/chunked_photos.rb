@@ -1,7 +1,7 @@
 module ChunkedPhotos
   PHOTOS_PER_PAGE = 8
   PHOTOS_PER_ROW  = 4
-  PHOTO_COUNT     = 31
+  PHOTO_COUNT     = 36
 
   def self.for_page(page)
     first = (page - 1) * PHOTOS_PER_PAGE + 1
