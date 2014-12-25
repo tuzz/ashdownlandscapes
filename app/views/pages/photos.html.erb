@@ -3,7 +3,7 @@
     <% chunk.each do |i| %>
       <div class="thumnail">
         <div class="border">
-          <%= link_to image_tag("thumnails/#{i}.jpg"), image_path("highres/#{i}.jpg") %>
+          <%= link_to image_tag("thumnails/_#{i}.jpg"), image_path("highres/_#{i}.jpg") %>
         </div>
       </div>
     <% end %>
